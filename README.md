@@ -4,7 +4,7 @@
 
 ## ScreenShot
 
-<img src="img/screenshot/one.png" height="500em" />&nbsp;<img src="assets/screenshot/two.png" height="500em" />
+<img src="img/screenshot/one.png" height="500em" />&nbsp;
 
 ## Website
 * [Website](https://conveypride.github.io)
