@@ -46,7 +46,7 @@
                                     </div>
                                     <div class="top-bar-text">
                                         <h3>Opening Hour</h3>
-                                        <p>Mon - Fri, 8:00am - 9:00pm</p>
+                                        <p>Mon - Fri, 7:00am - 6:00pm</p>
                                     </div>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@
                                     </div>
                                     <div class="top-bar-text">
                                         <h3>Email Us</h3>
-                                        <p>conveypride@gmail.com</p>
+                                        <p>Dzifanu67@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -317,10 +317,15 @@
         <div class="price">
             <div class="container">
                 <div class="section-header text-center">
-                    <p>Washing Plan</p>
-                    <h2>Choose Your Plan</h2>
+                    <p>See Our Pricing</p>
+                    <h2> Click the button below to download our pricing </h2>
                 </div>
-                <div class="row">
+                 <div class="price-item">
+                  <div class="price-footer">
+                      <a class="btn btn-custom" id="downloadBtn" href="#">Click To Download</a>
+                      </div>
+                        </div>
+                <!-- <div class="row">
                     <div class="col-md-4">
                         <div class="price-item">
                             <div class="price-header">
@@ -381,7 +386,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- Price End -->
@@ -695,7 +700,7 @@
                             <h2>Get In Touch</h2>
                             <p><i class="fa fa-map-marker-alt"></i>Greater Accra, Ghana</p>
                             <p><i class="fa fa-phone-alt"></i>+233 244 879266</p>
-                            <p><i class="fa fa-envelope"></i>conveypride@gmail.com</p>
+                            <p><i class="fa fa-envelope"></i>Dzifanu67@gmail.com</p>
                             <div class="footer-social">
                                 <a class="btn" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
@@ -741,7 +746,7 @@
             </div>
         </div>
         <!-- Footer End -->
-        
+        <!-- ii -->
         <!-- Back to top button -->
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         
@@ -774,7 +779,25 @@
               let url = "https://wa.me/233244879266"  + "?text=" + encodeURIComponent("Hi I'm " + name + "with email: " + email+ " and phone number: "+ phone +", " + message);
               window.open(url, "_blank");
             }
-          
+        
+ 
+          document.addEventListener("DOMContentLoaded", function () {
+            const downloadBtn = document.getElementById("downloadBtn");
+
+            downloadBtn.addEventListener("click", function () {
+                const pdfUrl = "./edtcarwash.pdf"; // Replace with your PDF file URL
+                downloadPDF(pdfUrl);
+            });
+
+            function downloadPDF(url) {
+                const link = document.createElement("a");
+                link.href = url;
+                link.target = "_blank"; // Open the PDF in a new tab
+                link.download = "document.pdf"; // Rename the downloaded file
+                link.click();
+            }
+        });
+
           </script>
     </body>
 </html>
